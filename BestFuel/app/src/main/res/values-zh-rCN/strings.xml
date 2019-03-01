@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">更好的燃料</string>
+    <string name="price_gas">汽油价格升</string>
+    <string name="price_alcohol">一升乙醇的价格</string>
+    <string name="priceAlcohol">酒精升价</string>
+</resources>

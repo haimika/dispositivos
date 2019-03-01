@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="2"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/gasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/gasAlcoholBackground"
+        android:digits="0123456789"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:text="Gas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/priceGasTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="right"
+        android:height="40dp"
+        android:background="#1976D2"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <SeekBar
+        android:id="@+id/gasSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_row="1"
+        android:layout_columnWeight="10"
+        android:layout_gravity="fill_horizontal"
+        android:max="1000"
+        android:progress="500" />
+
+    <TextView
+        android:id="@+id/alcoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="#FF8F00"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/price_alcohol"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:text="@string/priceAlcohol"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        tools:text="Ethanol" />/>
+
+    <TextView
+        android:id="@+id/priceAlcoolTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:gravity="center_vertical"
+        />
+
+    <SeekBar
+        android:id="@+id/alcoolSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="fill_horizontal"
+        android:max="1000"
+        android:progress="500"
+        android:layout_row="3"
+        android:layout_columnWeight="10"
+        />
+
+    <TextView
+        android:id="@+id/bestOptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/gasAlcoholBackground"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="Best Option"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/bestOptionImageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_columnSpan="2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/gasolina"/>
+
+</GridLayout>
